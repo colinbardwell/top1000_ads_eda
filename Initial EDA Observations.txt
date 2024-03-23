@@ -61,7 +61,7 @@ The distribution of min impressions by ad type is similar for the top 10 adverti
 Among the top 10 advertisers that run both age-targeted and non-targeted ads, age-targeted ads tend to get more impressions.
 
 Advertisements run by MIKE BLOOMBERG 2020 INC have the third highest funding on average, but the third lowest average number of days run.  
-This advertiser has the most ads run within the top 10 advertisers.
+This advertiser has the most ads run across campaigns within the top 10 advertisers.
 
 BIDEN FOR PRESIDENT has the highest funding both between ad campaigns and for individual ads in the subset. They come in second for number of ads run.
 
