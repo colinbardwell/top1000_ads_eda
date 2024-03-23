@@ -1,0 +1,71 @@
+
+INITIAL OBSERVATIONS:
+
+Dataframe of 1000 rows, 18 columns. The ad_campaigns_list column is all null, so it gets dropped.
+
+First ad represented started May 2018, latest ad to end was in March 2024. 
+
+Impressions are only represented as a range, so the column is replaced with min_impressions.
+
+The distributions of most numeric variables in the dataset skew heavily to the right, aside from min_impressions.
+
+The highest represented impression range is >=10,000,000, where 40% of advertisements in the dataset fall.
+
+37.6% of advertisements utilize age targeting (not including those that target all age ranges)
+
+5.8% of advertisements utilize gender targeting (not including those that target all genders represented)
+
+87.2% of advertisements utilize geo targeting (whether included regions or excluded)
+
+Ad types represented are 54.8% VIDEO, 36.2% TEXT, 9.0% IMAGE
+
+Advertisements that do not utilize geo targeting tend to have advertisers that spend more money amongst all campaigns on average.
+
+Higher value ad campaigns tend to start more frequently at the beginning of the year, and tend not to end in April or May.
+
+Minimum impressions for TEXT ads on average are much lower than that of IMAGE or VIDEO ads by nearly an order of magnitude.
+
+IMAGE ads consistently fall in the highest impression range, while VIDEO ads have a wider distribution of impressions values.
+
+
+The top 10 advertisers by number of occurences in the dataset are as follows:
+
+DONALD J. TRUMP FOR PRESIDENT, INC.                  155
+TRUMP MAKE AMERICA GREAT AGAIN COMMITTEE              54	
+MIKE BLOOMBERG 2020 INC                               43
+BIDEN FOR PRESIDENT                                   38
+BIDEN VICTORY FUND                                    31
+DSCC                                                  27
+Yes on 27...                                          26
+WARNOCK FOR GEORGIA                                   24
+DNC SERVICES CORP / DEMOCRATIC NATIONAL COMMITTEE     21
+ONE NATION                                            21
+Name: advertiser_name, dtype: int64
+
+
+
+OBSERVATIONS ON TOP 10 ADVERTISERS SUBSET:
+
+The top 10 advertisers (by number of occurences) are represented in 440 out of 1000 total advertisements.
+
+Distributions of most numeric variables are similar to the full dataset, with a stronger right skew for num_of_days.
+
+Proportion of ad types is not very different from full subset: nearly 2% fewer images in favor of videos.
+
+The advertiser "DONALD J. TRUMP FOR PRESIDENT, INC." runs more than twice as many ads as the rest of the top 10.
+
+Only two advertisers in the top 10 run image ads at all, with the majority coming from "TRUMP MAKE AMERICA GREAT AGAIN COMMITTEE".
+
+The distribution of min impressions by ad type is similar for the top 10 advertisers, with a narrower distribution for VIDEO.
+
+Among the top 10 advertisers that run both age-targeted and non-targeted ads, age-targeted ads tend to get more impressions.
+
+Advertisements run by MIKE BLOOMBERG 2020 INC have the third highest funding on average, but the third lowest average number of days run.  
+This advertiser has the most ads run within the top 10 advertisers.
+
+BIDEN FOR PRESIDENT has the highest funding both between ad campaigns and for individual ads in the subset. They come in second for number of ads run.
+
+Most advertisers run ads for less than 150 days on average, while DNC SERVICES CORP / DEMOCRATIC NATIONAL COMMITTEE runs them for >300 on average.
+
+
+
